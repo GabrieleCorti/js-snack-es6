@@ -1,4 +1,4 @@
-let bici = [
+var bici = [
     {
         nome: "bici1",
         peso: 3000
