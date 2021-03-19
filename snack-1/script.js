@@ -9,7 +9,7 @@ var bici = [
     },
     {
         nome: "bici3",
-        peso: 9000
+        peso: 4000
     },
     {
         nome: "bici4",
@@ -23,16 +23,17 @@ var bici = [
 
 var {peso} = bici[0];
 var leggero = peso;
+var biciLeggera
 
 for (let i = 0; i < bici.length; i++) {
     let {peso} = bici[i];
 
     if (peso < leggero) {
         
-        leggero = bici[i];
-
+        leggero = peso;
+        biciLeggera = bici[i];
     }
     
 }
 
-console.log(leggero);
+console.log(biciLeggera);
