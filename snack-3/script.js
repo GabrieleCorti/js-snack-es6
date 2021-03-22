@@ -13,7 +13,7 @@ function forThatInterval (arr, a, b){
     let onlyNumeriInt = [];
     for (let i = 0; i < arr.length; i++) {
          
-        if (arr.indexOf(arr[i]) >= a && arr.indexOf(arr[i]) <= b) {onlyNumeriInt.push(arr[i]);} 
+        if (i >= a && i <= b) {onlyNumeriInt.push(arr[i]);} 
 
     }
 
@@ -23,5 +23,5 @@ function forThatInterval (arr, a, b){
 var slice2 = thatInterval(numeri, 2, 8);
 var slice = forThatInterval(numeri, 2, 8);
 
-console.log(slcie2);
+console.log(slice2);
 console.log(slice);
