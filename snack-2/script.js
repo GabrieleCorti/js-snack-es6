@@ -34,3 +34,9 @@ for (let i = 0; i < Squadre.length; i++) {
     })
 }
 console.log(NewSquadre);
+
+var test = ["n", "s", "n", "s", "s"]
+for (let i = 0; i < test.length; i++) {
+    console.log(test[i]);
+    
+}
