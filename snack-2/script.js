@@ -22,7 +22,7 @@ const Squadre = [
     }
 ];
 
-const NewSquadre = [];
+/* const NewSquadre = [];
 for (let i = 0; i < Squadre.length; i++) {
     
     Squadre[i]["falliSubiti"] = randomInt(0, 10);
@@ -33,10 +33,16 @@ for (let i = 0; i < Squadre.length; i++) {
         falliSubiti: Squadre[i]["falliSubiti"]
     })
 }
-console.log(NewSquadre);
+console.log(NewSquadre); */
 
-var test = ["n", "s", "n", "s", "s"]
-for (let i = 0; i < test.length; i++) {
-    console.log(test[i]);
-    
-}
+const NewSquadre = Squadre.map((item) => {
+    item["falliSubiti"] = randomInt(0, 10);
+    item["punti"] = randomInt(0, 10);
+
+    return {
+        nome: item["nome"],
+        falliSubiti: item["falliSubiti"]
+    };
+});
+
+console.log(NewSquadre);
