@@ -10,18 +10,16 @@ function thatInterval (arr, a, b){
 
 function forThatInterval (arr, a, b){
 
+    let onlyNumeriInt = [];
     for (let i = 0; i < arr.length; i++) {
          
-        let onlyNumeriInt = [];
-        if (a < arr.indexOf(arr[i]) && b > arr.indexOf(arr[i])){
-            
-            
-            onlyNumeriInt.push(arr[i])
-        }
-;
-        return onlyNumeriInt;
-        
+        if (arr.indexOf(arr[i]) >= a && arr.indexOf(arr[i]) <= b) {
+            onlyNumeriInt.push(arr[i]);
+        } 
+
     }
+
+    return onlyNumeriInt;
 }
 var slice = forThatInterval(numeri, 2, 8);
 
